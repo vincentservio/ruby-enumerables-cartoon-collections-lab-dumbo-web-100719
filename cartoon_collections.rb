@@ -20,7 +20,14 @@ def find_the_cheese (array)
   cheese_types = ["cheddar", "gouda", "camembert"]
 
 
+
  array.find {|cheese| cheese  == "cheddar" || cheese == "gouda" || cheese == "camembert"}
+
+ array.index {|x| x == cheese_types.any?} 
+ #include? (cheese_types)
+   #"cheddar" || "gouda" || "camembert")
+ 
+
  
  
 end
